@@ -24,9 +24,9 @@ jobs:
 
     - name: Install dependancies
       run: |
-        sudo apt update \
-        sudo apt install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev \
-        sudo apt upgrade
+        sudo apt update
+        sudo apt install -y libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev cmake g++
+
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
